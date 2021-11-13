@@ -4,7 +4,7 @@
 	if (isset($_POST['btnAdd'])){
 		$username = $_POST['username'];
 		$email = $_POST['email'];
-		$password = $_POST['password'];
+		$password = md5($_POST['password']);
 			// $hash = password_hash($password,  
    //        	PASSWORD_DEFAULT); 
 		$phone = $_POST['phone'];
